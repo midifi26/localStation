@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+ 
+    <form id="form">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="usuario@gmail.com" required><br>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe aqui." min="5" max="500" required></textarea><br>
+        <label for="url">URL imagen</label>
+        <input type="url" id="url" name="url" placeholder="URL"><br>
+        <input type="submit" value="Enviar">
+        <button id="btnBorrar">Borrar</button>
+
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
