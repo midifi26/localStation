@@ -14,7 +14,15 @@ document.querySelector('form').addEventListener('submit', function(event) {
     localStorage.setItem('formulario', JSON.stringify(formulario));
     });
 
-    document.getElementById('btnBorrar').addEventListener('click',function(){
-        
-        return localStorage.clear();
+    
+    let eliminarLS = document.getElementById('borrarLS').addEventListener('submit',function(){
+     
+     return localStorage.clear();
     });
+
+     document.getElementById('url').addEventListener('click',function(){
+             
+            return localStorage.removeItem('url');
+         })
+
+    
