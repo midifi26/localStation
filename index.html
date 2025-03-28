@@ -6,24 +6,36 @@
     <title>Formulario</title>
 </head>
 <body>
- 
-    <form id="form">
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="usuario@gmail.com" required><br>
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" placeholder="Escribe aqui." min="5" max="500" required></textarea><br>
-        <label for="url">URL imagen</label>
-        <input type="url" id="url" name="url" placeholder="URL"><br>
-        <input type="submit" value="Enviar">
+ <main>
+    <section id="usuario">
+       
+        <form id="form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="usuario@gmail.com" required><br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe aqui." min="5" max="500" required></textarea><br>
+            <label for="url">URL imagen</label>
+            <input type="url" id="url" name="url" placeholder="URL"><br>
+            <input type="submit" value="Enviar">
         
 
-    </form>
-    <form id="borrarLS">
-        <input type="submit" value="Borrar">
-        <button class="borrarUrl">Eliminar Url</button>
-    </form>
+           </form>
+           <form id="borrarLS">
+            <input type="submit" value="Borrar">
+            <button class="borrarUrl">Eliminar Url</button>
+        </form>
+        <div id ="lista-contactos"></div>
+       
+    </section>
+</main>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
